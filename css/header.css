@@ -1,0 +1,13 @@
+header {
+  background-color: #014E56;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=header.css.map */
