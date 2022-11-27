@@ -1,42 +1,69 @@
-#hero{
-    background-color: #014E56;
-    padding-top: 130px;
-    padding-bottom: 250px;
-    background-image: url('../../img/bg_left.png'),url('../../img/bg_bottom.png');
-    background-repeat: no-repeat;
-    background-position:  left center,bottom right 165px;
+body{
+  background-color: rgba(0, 0, 0, 0.351);
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
-  .hero__inner{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;    
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-35deg);
+  width: 700px;
+  position:relative;
+  top: 200px;
+ 
 }
-    .hero__title{
-        font-weight: 700;
-        font-size: 100px;
-        line-height: 100px;
-        color: #FFFFFF;
-
-span{
-    color: #F67E7E;;
+.main{
+  width: 300px;
+  height: 300px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-color: rgba(83, 223, 48, 0.508);
+  position: relative;
+  z-index: 2;
+  backdrop-filter: blur(10px);
 }
-    }
-.hero__text{
-    font-weight: 600;
-font-size: 18px;
-line-height: 28px;
-color: #FFFFFF;
-max-width: 445px;
+.kvadrat{
+  width: 150px;
+  height: 150px;
+  background-color: rgb(199, 41, 41);
+  animation-name: kvadrat;
+  animation-iteration-count: infinite;
+  animation-duration:5s;
+  margin-right: 40px;
+  position: relative;
+  z-index: 4;
 }
-@media (max-width:950px){
-    #hero{
-        background-image: url(../../img/bg_bottom.png);
-        background-position: bottom center;
-    }
-    .hero__inner{
-        justify-content: center;
-        text-align: center;
-    }
+@keyframes kvadrat{
+  50%{
+    transform: translateX(550px);
+   
 }
-
+100%{
+  transform: translateX(0);
+ z-index: 1;
+}
+}
+.aylana{
+  width: 150px;
+  height: 150px;
+  background-color: rgb(234, 47, 255);
+  border-radius: 50%;
+  animation-name: aylana;
+  animation-iteration-count: infinite;
+  animation-duration:5s;
+  margin-left: 40px;
+  position: relative;
+ 
+}
+@keyframes aylana{
+  50%{
+    transform: translateX(-550px);
+    z-index: 1;
+}
+100%{
+  transform: translateX(0);
+ z-index: 4;
+}
+}
